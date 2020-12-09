@@ -49,7 +49,7 @@ basic.forever(function () {
     }
     control.waitMicros(1000*1000)
 
-    pins.analogWritePin(AnalogPin.P0, Math.floor((1023/23)*hour))
+    pins.analogWritePin(AnalogPin.P0, Math.floor((1023/24)*hour))
     pins.analogWritePin(AnalogPin.P1, Math.floor((1023/60)*minute))
     pins.analogWritePin(AnalogPin.P2, Math.floor((1023/60)*second))
 })
